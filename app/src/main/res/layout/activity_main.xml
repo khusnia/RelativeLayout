@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@android:dimen/notification_large_icon_width"
+        android:typeface="monospace"
+        android:layout_marginLeft="500dp"
+        android:textColor="#FFFFFF"
+        android:text="Messenger"
+        android:textSize="49dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/messaging" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <EditText
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/image1"
+        android:background="#FFFFFF"
+        android:hint="masukkan pesan..."/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/chat"
+        android:textStyle="bold"
+        android:background="#C0C0C0"
+        android:textSize="15dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#87CEEB"
+        android:padding="10dp"
+        android:text="Waalaikumussalam, alhamdulillah kabar baik"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView2"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#4682B4 "
+        android:padding="10dp"
+        android:text="Assalamualaikum, gimana kabarmu ?"/>
+
+</RelativeLayout>
